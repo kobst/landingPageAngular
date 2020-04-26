@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Plazm</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto my-2 my-lg-0" id="menu">
+                <li class="nav-item" data-menuanchor="section_home"><a class="nav-link" href="#section_home">Home</a></li>
+                <li class="nav-item" data-menuanchor="section_about"><a class="nav-link" href="#section_about">About</a></li>
+                <li class="nav-item" data-menuanchor="section_why"><a class="nav-link" href="#section_why">Why</a></li>
+                <li class="nav-item" data-menuanchor="section_contact"><a class="nav-link" href="#section_contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
+    <div class="section" id="home">
+        <!-- Masthead-->
+        <header class="masthead">
+          <div class="container h-100">
+              <div class="row h-100 align-items-center justify-content-center text-center">
+                  <div class="col-lg-10 align-self-end">
+                      <h1 class="text-uppercase text-white font-weight-bold">Plazm</h1>
+                      <hr class="divider my-4" />
+                  </div>
+                  <div class="col-lg-8 align-self-baseline">
+                      <p class="text-white-75 font-weight-light mb-5">The best way to share and learn about what's happening where you are, when you are there.</p>
+                  </div>
+              </div>
+          </div>
+      </header>
+    </div>
+  
+      <!-- Services -->
+      <div class="section bg-dark text-white" id="services">
+          <div class="container" id="about">
+              <h2 class="text-center mt-0 service-title">Local discovery and communication tools for 3 types of users.</h2>
+              <hr class="divider my-4" />
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 text-center service-cell">
+                      <div class="mt-5">
+                          <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+                          <h3 class="h4 mb-3">Mobile Consumers</h3>
+                          <p class="text-muted-white mb-0">Discover what's happening, where you are when you're there</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center service-cell">
+                      <div class="mt-5">
+                          <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+                          <h3 class="h4 mb-3">Brick-and-Mortar Businesses</h3>
+                          <p class="text-muted-white mb-0">Create your own digital storefront and let people find you on your terms</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 text-center service-cell">
+                      <div class="mt-5">
+                          <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+                          <h3 class="h4 mb-3">Local Knowledge Experts</h3>
+                          <p class="text-muted-white mb-0">Share your unique take on everything the city has to offer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Why -->
+      <div class="section bg-primary" id="why">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-10 text-white text-left">
+                      <h2 class="mt-4">Why Plazm?</h2>
+                      <hr class="divider-white my-4" align="left" />
+                      <p class="text-muted-white mb-5">
+                          We curate our social media feeds based on our identities and interests. Since these don’t change very often, all the information that flows from this model remains relevant everywhere all the time. This is great for almost all our information needs. <br/><br/>
+  
+                          But there is an exception.<br/><br/>
+  
+                          Local and event-driven information represents a fundamental mismatch for this legacy model of social media. Unlike information based on our identity and interests, this kind of content also requires us to be physically nearby to be relevant and meaningful. Legacy social media, with its chronological feeds and social graphs, cannot solve this problem. <br/><br/>
+  
+                          Plazm can. <br/><br/>
+  
+                          By bringing together both local businesses and local knowledge experts, Plazm focuses on connecting mobile users to their environments in the most direct and intuitive way. <br/><br/>
+  
+                          The result is not only a community to share local knowledge, but a living, real-time map that helps us navigate the real world.  <br/><br/>
+  
+                          read more on the <a href="#" class="link-blue">blog.</a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Contact Us -->
+      <div class="section bg-dark" id="contact">
+          <div class="container">
+              <h2 class="text-center mt-0 text-white service-title">Say Hello.</h2>
+              <hr class="divider my-4" />
+              <h5 class="text-muted-white">questions? comments? we'd love to hear from you</h5>
+              <form>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="name" id="nameInput" placeholder="Full Name">
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="emailInput" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control" name="message" id="messageInput" rows="5" placeholder="Your Message"></textarea>
+                  </div>
+                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Send Email</a>
+              </form>
+          </div>
+      </div>
+  </div>
